@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{pageTitle}}</title>
+</head>
+<body>
+  {{> header}}
+  <p>{{screamIt Message}}</p>
+
+  {{> footer}}
+  <button id="button" onclick="increasetimes()">
+    You have clicked this button 0 times, go ahead, click it!
+  </button>
+  <script>
+  var times = 0;
+  function increasetimes() {
+    times = times + 1;
+    document.getElementById("button").innerHTML = `You have clicked this button  ${times}  times, go ahead, click it!`;
+  };
+  </script>
+</body>
+</html>

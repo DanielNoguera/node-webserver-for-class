@@ -30,7 +30,7 @@ return text.toUpperCase();
 });
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-    Message: "hello!",
+    Message: "This is the main message text.  I will change this to announcements",
     pageTitle: 'home page'
   })
 }
@@ -38,6 +38,11 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
   pageTitle: 'about page'
+});
+});
+app.get('/projects', (req, res) => {
+  res.render('Projects.hbs', {
+  pageTitle: 'Projects'
 });
 });
 app.get('/bad', (req, res) => {

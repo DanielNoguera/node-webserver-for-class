@@ -53,3 +53,9 @@ app.get('/bad', (req, res) => {
 app.listen(port, () => {
   console.log(`Yo! Daniel!  Server is up on port ${port} !`);
 });
+//to update publicly...
+//git status
+//git add .
+//git commit -m "Insert message here"
+//git push
+//git push heroku
